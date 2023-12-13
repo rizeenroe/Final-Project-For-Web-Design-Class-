@@ -1,0 +1,227 @@
+nav{
+    padding-left: 1%;
+    margin: auto;
+    font-size: 30px;
+}
+
+a:hover{
+    color: red;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}   
+
+body{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    
+    background-color: rgb(50, 19, 19);
+    
+}
+
+body p{
+    line-height: 1.6;
+    
+}
+
+main h2{
+    font-size: 30px;
+
+    text-align: center;
+    font-family: 'impact', sans-serif;
+}
+
+main h3{
+    text-decoration: underline ;
+}
+
+
+.description, .mainContent, .play, nav, footer{
+    background-color: rgb(79, 12, 12);
+}
+
+.description{
+    text-align: center;
+    font-family: 'impact', sans-serif;
+    font-size: 20px;
+}
+
+
+section{
+    border: 2px solid rgb(152, 16, 16);
+    float: left;
+    display: flex;
+}
+
+.mainContent, .footer-section, .footerURLandMedia{
+    margin-top: 5%;
+}
+
+#section1, #section2, #section3{
+    margin-left: 10%;    
+    margin-right: auto;
+
+
+    /* For overlay */
+    position: relative;
+    max-width: 350px; 
+}
+
+#play1, #play2{
+        
+    margin-right: auto;
+
+    /* For overlay */
+    position: relative;
+ 
+  
+}
+
+
+#section1 img, #section2 img, #section3 img{
+    width: 100%;
+    vertical-align: middle;
+}
+    
+#play2,#play2 img{
+    background-color: rgb(41, 22, 22);
+}
+
+.play{
+    margin-top: 30%
+}
+
+#play1, #play2{
+    margin-left: 9.2%;
+    margin-right: auto;
+}
+
+footer{
+    margin-top: 30%;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.footer-section{
+    float: left;
+    padding-left: 24%;
+    
+    
+}
+
+.footerURLandMedia{
+    float: right;
+    padding-right: 24%;
+}
+
+#Copyright{
+    font-size: 15px;
+    font-family: 'exo', sans-serif;
+    text-align: center;
+
+    position: absolute;
+    padding: 10px;
+    top: 500px;
+    left: 40%;
+
+}
+
+/* Deck CSS */
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.container img{
+    height: 365px;
+}
+
+/* shop CSS */
+
+.error{
+    display: none;
+    color: red;
+}
+
+.submitted{
+    color: rgb(60, 255, 60);
+    display: none;
+}
+
+/* How to play CSS */
+
+.how-to-play-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust as needed */
+}
+.step1, .step2, .step3, .step4{
+    text-align: center;
+}
+
+.step1 img, .step2 img, .step3 img, .step4 img{
+
+    padding-top: 2%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+    /* Home Page */
+    main img{
+        height: 150px;
+        width: 150px;
+    }
+
+    #play1, #play2{
+        margin-left: 16%;
+    }
+
+    footer{
+        margin-top: 40%;
+    }
+
+    footer, #Copyright{
+        font-size: 12px;
+    }
+
+    /* Deck Page */
+    #darkMagicianDeck img, #blueEyesDragonDeck img, #toonDeck img{
+        height: 290px;
+        width: 170px;
+    }
+
+    /* How To Play Page */
+
+    .step1 img, .step2 img, .step3 img, .step4 img{
+        height: 200px;
+        width: 220px;
+    }
+    .step2 img{
+        height: 400px;
+        width: 600px;
+    }
+
+    .step3 img{
+        height: 400px;
+        width: 470px;
+    }
+
+    /* Shop Page */
+    .paymentMethod img{
+        height: 80px;
+        width: 130px;
+    }
+}
